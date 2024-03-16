@@ -9,7 +9,20 @@
 	font-family: balsamiq, sans-serif;
 	font-weight: 700;
 
+	&--right {
+		text-align: end;
+	}
+
 	@media (min-width: 1200px) {
 		font-size: 64px;
+	}
+}
+
+.text {
+	margin: 0;
+
+	&--right {
+		margin-left: auto;
+		text-align: end;
 	}
 }
