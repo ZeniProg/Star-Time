@@ -1,0 +1,39 @@
+.distance {
+	&__title {
+		@include adaptive-font(48, 24);
+		text-align: center;
+
+		@media (min-width: 1200px) {
+			font-size: 48px;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 170px;
+	}
+
+	&__list {
+		list-style-type: disc;
+	}
+
+	&__list-item {
+		&::marker {
+			font-size: 28px;
+		}
+	}
+
+	&__img {
+		width: 315px;
+		height: auto;
+	}
+
+	&__text {
+		margin: 0 auto;
+		max-width: 860px;
+		text-align: center;
+		color: var(--yellow-orange);
+	}
+}
