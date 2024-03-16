@@ -1,0 +1,25 @@
+.photos {
+	&__title {
+		@include adaptive-font(48, 24);
+		text-align: center;
+
+		@media (min-width: 1200px) {
+			font-size: 48px;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		column-gap: 345px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		row-gap: 55px;
+	}
+
+	&__img {
+		border-radius: 25px;
+		width: 425px;
+		height: auto;
+	}
+}
