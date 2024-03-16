@@ -1,0 +1,18 @@
+.hero {
+	padding: 120px 0 645px;
+	background-image: url('@img/hero/hero-bg.png');
+	background-position: bottom;
+	background-size: 1200px;
+	background-repeat: no-repeat;
+	background-color: var(--twine-color);
+
+	&__title {
+		margin: 0;
+		text-align: center;
+	}
+
+	&__text {
+		margin: 0;
+		text-align: center;
+	}
+}

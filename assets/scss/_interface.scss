@@ -1,0 +1,15 @@
+.section {
+	padding: 385px 0;
+}
+
+.title {
+	@include adaptive-font(64, 32);
+	margin: 0;
+	margin-bottom: 90px;
+	font-family: balsamiq, sans-serif;
+	font-weight: 700;
+
+	@media (min-width: 1200px) {
+		font-size: 64px;
+	}
+}
