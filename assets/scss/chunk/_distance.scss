@@ -13,6 +13,18 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 170px;
+
+		@media (max-width: 992px) {
+			margin-bottom: 85px;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
+
+		@media (max-width: 576px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__list {
@@ -34,6 +46,18 @@
 	&__img {
 		width: 315px;
 		height: auto;
+
+		@media (max-width: 992px) {
+			width: 280px;
+		}
+
+		@media (max-width: 768px) {
+			width: 245px;
+		}
+
+		@media (max-width: 576px) {
+			width: 210px;
+		}
 	}
 
 	&__text {
