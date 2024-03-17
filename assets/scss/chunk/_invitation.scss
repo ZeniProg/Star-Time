@@ -1,5 +1,4 @@
 .invitation {
-	padding: 120px 0 370px;
 	background-color: var(--twine-color);
 
 	&__title {
@@ -8,5 +7,9 @@
 
 	&__text {
 		text-align: center;
+
+		@media (max-width: 576px) {
+			text-align: left;
+		}
 	}
 }
