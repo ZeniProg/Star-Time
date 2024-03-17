@@ -1,0 +1,21 @@
+.info {
+	&__title {
+		text-align: center;
+	}
+
+	&__text {
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	&__link {
+		display: block;
+		margin: auto;
+		width: fit-content;
+		color: var(--yellow-orange);
+
+		&:hover {
+			border-bottom: 2px solid var(--yellow-orange);
+		}
+	}
+}
