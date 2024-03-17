@@ -4,11 +4,21 @@
 	}
 
 	&__text {
+		@include adaptive-font(36, 18);
 		margin-bottom: 25px;
 		text-align: center;
+
+		@media (min-width: 1200px) {
+			font-size: 36px;
+		}
+
+		@media (max-width: 576px) {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__link {
+		@include adaptive-font(36, 14);
 		display: block;
 		margin: auto;
 		width: fit-content;
@@ -16,6 +26,16 @@
 
 		&:hover {
 			border-bottom: 2px solid var(--yellow-orange);
+		}
+
+		@media (min-width: 1200px) {
+			font-size: 36px;
+		}
+
+		@media (max-width: 576px) {
+			&:hover {
+				border-bottom: 1px solid var(--yellow-orange);
+			}
 		}
 	}
 }
