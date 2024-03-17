@@ -2,7 +2,7 @@
 	padding: 120px 0 645px;
 	background-image: url('@img/hero/hero-bg.png');
 	background-position: bottom;
-	background-size: 1200px;
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-color: var(--twine-color);
 
@@ -13,5 +13,41 @@
 	&__text {
 		margin: 0;
 		text-align: center;
+	}
+
+	@media (min-width: 1200px) {
+		background-size: 1200px;
+	}
+
+	@media (max-width: 1100px) {
+		padding: 120px 0 500px;
+	}
+
+	@media (max-width: 992px) {
+		padding: 120px 0 450px;
+	}
+
+	@media (max-width: 850px) {
+		padding: 60px 0 400px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 60px 0 350px;
+	}
+
+	@media (max-width: 650px) {
+		padding: 60px 0 300px;
+	}
+
+	@media (max-width: 576px) {
+		padding: 30px 0 250px;
+	}
+
+	@media (max-width: 450px) {
+		padding: 30px 0 200px;
+	}
+
+	@media (max-width: 370px) {
+		padding: 30px 0 150px;
 	}
 }
