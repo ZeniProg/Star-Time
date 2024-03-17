@@ -1,0 +1,13 @@
+.description {
+	&__title {
+		text-align: center;
+	}
+
+	&__text {
+		text-align: center;
+
+		@media (max-width: 576px) {
+			text-align: left;
+		}
+	}
+}
