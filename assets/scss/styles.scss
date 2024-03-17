@@ -14,6 +14,7 @@
 // @import "components/sliders";
 
 // * Main styles
+@import 'chunk/header';
 @import 'chunk/hero';
 @import 'chunk/moon';
 @import 'chunk/sun';
@@ -21,4 +22,3 @@
 @import 'chunk/distance';
 @import 'chunk/photos';
 @import 'chunk/info';
-@import 'chunk/footer';
