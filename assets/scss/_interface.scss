@@ -4,6 +4,22 @@
 	&--small-padding {
 		padding: 120px 0;
 	}
+
+	@media (max-width: 850px) {
+		padding: 300px 0;
+	}
+
+	@media (max-width: 768px) {
+		padding: 200px 0;
+	}
+
+	@media (max-width: 576px) {
+		padding: 150px 0;
+	}
+
+	@media (max-width: 450px) {
+		padding: 120px 0;
+	}
 }
 
 .title {
