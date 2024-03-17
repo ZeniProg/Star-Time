@@ -1,0 +1,39 @@
+.contacts {
+	&__title {
+		text-align: center;
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	&__link {
+		position: relative;
+		color: var(--yellow-orange);
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			display: block;
+			border-radius: 10px;
+			width: 0;
+			height: 4px;
+			background: var(--yellow-orange);
+			transition: 0.4s;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+	}
+}
