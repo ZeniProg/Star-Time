@@ -19,23 +19,31 @@
 
 	&__link {
 		@include adaptive-font(36, 14);
+		position: relative;
 		display: block;
 		margin: auto;
 		width: fit-content;
 		color: var(--yellow-orange);
 
-		&:hover {
-			border-bottom: 2px solid var(--yellow-orange);
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -7px;
+			display: block;
+			border-radius: 10px;
+			width: 0;
+			height: 4px;
+			background: var(--yellow-orange);
+			transition: 0.6s;
+		}
+
+		&:hover::after {
+			width: 100%;
 		}
 
 		@media (min-width: 1200px) {
 			font-size: 36px;
-		}
-
-		@media (max-width: 576px) {
-			&:hover {
-				border-bottom: 1px solid var(--yellow-orange);
-			}
 		}
 	}
 }
